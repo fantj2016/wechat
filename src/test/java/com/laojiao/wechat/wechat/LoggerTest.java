@@ -18,17 +18,18 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@Slf4j
 //@Data
 public class LoggerTest {
-    private final Logger logger = LoggerFactory.getLogger(LoggerTest.class);
+//    private final Logger logger = LoggerFactory.getLogger(LoggerTest.class);
     @Test
     public void test1(){
         String username = "laojiao";
         String password = "laojiao";
-        logger.info("username is "+username+"password :"+password);
-        logger.info("username {},password {}",username,password);
-        logger.debug("debug...");
-        logger.info("info...");
-        logger.error("error...");
+        log.info("username is "+username+"password :"+password);
+        log.info("username {},password {}",username,password);
+        log.debug("debug...");
+        log.info("info...");
+        log.error("error...");
     }
 }

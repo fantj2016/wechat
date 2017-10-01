@@ -15,7 +15,7 @@ import javax.persistence.Id;
  */
 
 @Entity
-@DynamicUpdate
+@DynamicUpdate    //动态更新
 @Data
 public class ProductCategory {
 
